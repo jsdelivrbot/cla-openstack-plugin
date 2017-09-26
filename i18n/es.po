@@ -1,0 +1,67 @@
+#: init/opentstack.js
+msgid " Openstack successful"
+msgstr " Openstack correctamente"
+
+#: public/form/openstack-ci-form.js
+msgid "Identity Service URL"
+msgstr "URL del servicio Identity"
+
+#: public/form/openstack-ci-form.js
+msgid "Compute Service URL"
+msgstr "URL del servicio Compute"
+
+#: public/form/openstack-ci-form.js
+msgid "Username"
+msgstr "Usuario"
+
+#: public/form/openstack-ci-form.js
+msgid "Password"
+msgstr "Contraseña"
+
+#: public/form/openstack-ci-form.js
+msgid "ID Project"
+msgstr "ID del Proyecto"
+
+#: public/form/openstack-form.js
+msgid "Openstack Resource"
+msgstr "Recurso Openstack"
+
+#: public/form/openstack-form.js
+msgid "Options"
+msgstr "Opciones"
+
+#: public/form/openstack-form.js
+msgid "ID Instance"
+msgstr "ID de la Instancia"
+
+#: public/form/openstack-form.js
+msgid "Name Instance"
+msgstr "Nombre de la Instancia"
+
+#: public/form/openstack-form.js
+msgid "ID Image"
+msgstr "ID de la Imagen"
+
+#: public/form/openstack-form.js
+msgid "ID Flavor"
+msgstr "ID Flavor"
+
+#: public/form/openstack-form.js
+msgid "Availability zone"
+msgstr "Zona de disponibilidad"
+
+#: public/form/openstack-form.js
+msgid "Name Volume"
+msgstr "Nombre del Volumen"
+
+#: public/form/openstack-form.js
+msgid "Volume Description"
+msgstr "Descripcion del Volumen"
+
+#: public/form/openstack-form.js
+msgid "Size (GB)"
+msgstr "Tamaño (GB)"
+
+#: public/form/openstack-form.js
+msgid "ID Volume"
+msgstr "ID del Volumen"
