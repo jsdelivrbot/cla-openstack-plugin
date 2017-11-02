@@ -110,6 +110,7 @@
             ['5', '5'],
         ],
         singleMode: true,
+        width: 300,
         hidden: !(data.args == 'create_instance')
     });
 
@@ -146,17 +147,6 @@
         value: data.volumeId || '',
         hidden: !(data.args == 'delete_volume')
     });
-    var errors = Cla.ui.errorManagementBox({
-        errorTypeName: 'type',
-        errorTypeValue: params.data.type || 'warn',
-        rcOkName: 'ok',
-        rcOkValue: params.data.ok,
-        rcWarnName: 'warn',
-        rcWarnValue: params.data.warn,
-        rcErrorName: 'error',
-        rcErrorValue: params.data.error,
-        errorTabsValue: params.data
-    });
 
     var panel = Cla.ui.panel({
         layout: 'form',
@@ -171,8 +161,7 @@
             volumeDescription,
             zone,
             volumeSize,
-            volumeId,
-            errors
+            volumeId
         ]
     });
 

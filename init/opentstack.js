@@ -4,6 +4,53 @@ reg.register('service.openstack.task', {
     name: 'Openstack Task',
     icon: '/plugin/cla-openstack-plugin/icon/openstack.svg',
     form: '/plugin/cla-openstack-plugin/form/openstack-form.js',
+    rulebook: {
+        moniker: 'openstack_task',
+        description: _('Executes the OpenStack commands'),
+        required: ['openstack_rs', 'args'],
+        allow: ['openstack_rs', 'args', 'instance_id', 'instance_name', 'image_id', 'flavor_id'
+        , 'zone', 'volume_name', 'volume_desc', 'size', 'volume_id'],
+        mapper: {
+            'openstack_rs': 'openstackCI',
+            'instance_id': 'instanceId',
+            'instance_name': 'instanceName',
+            'image_id': 'imageId',
+            'flavor_id': 'flavorId',
+            'volume_name': 'volumeName',
+            'volume_desc': 'volumeDescription',
+            'volume_id': 'volumeId'
+        },
+        examples: [{
+            openstack_task: {
+                openstack_rs: 'openstack_resource',
+                args: 'start_instance',
+                instance_id: "193f-4f44-a6c5-e79ef3bc8bb7"
+            }
+        },{
+            openstack_task: {
+                openstack_rs: 'openstack_resource',
+                args: 'create_instance',
+                instance_name: 'my new Instance',
+                image_id: '7ab80adc-46c4-4ea0',
+                flavor_id: '1'
+            }
+        },{
+            openstack_task: {
+                openstack_rs: 'openstack_resource',
+                args: 'create_volume',
+                volume_name: 'New Volume',
+                volume_desc: 'my new volume with 10 GB',
+                zone: 'nova',
+                size: '10'
+            }
+        },{
+            openstack_task: {
+                openstack_rs: 'openstack_resource',
+                args: 'delete_volume',
+                volume_id: 'ad85c874-979b-431e'
+            }
+        }]
+    },
     handler: function(ctx, params) {
         var ci = require("cla/ci");
         var log = require('cla/log');

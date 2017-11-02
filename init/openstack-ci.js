@@ -5,7 +5,7 @@ ci.createRole("Openstack");
 ci.createClass("OpenstackServer", {
     form: '/plugin/cla-openstack-plugin/form/openstack-ci-form.js',
     icon: '/plugin/cla-openstack-plugin/icon/openstack.svg',
-    roles: ["Openstack"],
+    roles: ["Openstack", "ClariveSE"],
     has: {
         identityUrl: {
             is: "rw",
