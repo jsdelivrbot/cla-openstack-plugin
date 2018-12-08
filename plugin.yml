@@ -1,7 +1,7 @@
 name: OpenStack Plugin
 description: OpenStack plugin will allow you to interact with instances and volumes of OpenStack.
 version: 1.0
-icon: https://cdn.rawgit.com/clarive/cla-openstack-plugin/master/public/icon/openstack.svg?sanitize=true
+icon: https://cdn.jsdelivr.net/gh/clarive/cla-openstack-plugin/public/icon/openstack.svg?sanitize=true
 url: https://github.com/clarive/cla-openstack-plugin
 requires:
   - clarive_version: 6.8 <= version

@@ -1,6 +1,6 @@
 # OpenStack Plugin
 
-<img src="https://cdn.rawgit.com/clarive/cla-openstack-plugin/master/public/icon/openstack.svg?sanitize=true" alt="OpenStack Plugin" title="OpenStack Plugin" width="120" height="120">
+<img src="https://cdn.jsdelivr.net/gh/clarive/cla-openstack-plugin/public/icon/openstack.svg?sanitize=true" alt="OpenStack Plugin" title="OpenStack Plugin" width="120" height="120">
 
 OpenStack plugin will allow you to interact with instances and volumes of OpenStack.
 
